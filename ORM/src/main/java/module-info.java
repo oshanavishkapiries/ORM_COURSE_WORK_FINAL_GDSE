@@ -1,17 +1,22 @@
-module com.org.orm {
+module edu.ijse.therapycenter.therapycenter {
     requires javafx.controls;
     requires javafx.fxml;
     requires org.hibernate.orm.core;
     requires static lombok;
     requires jakarta.persistence;
+
     requires java.naming;
     requires modelmapper;
     requires bcrypt;
     requires java.desktop;
-    opens com.org.orm.entity to org.hibernate.orm.core;
-    opens com.org.orm.config to jakarta.persistence;
 
+    opens edu.ijse.therapycenter.controller to javafx.fxml;
 
-    opens com.org.orm.controller to javafx.fxml;
-    exports com.org.orm;
+    opens edu.ijse.therapycenter.entity to org.hibernate.orm.core;
+    opens edu.ijse.therapycenter.config to jakarta.persistence;
+
+//    opens lk.ijse.gdse.supermarket.dto.tm to javafx.base;
+
+    exports edu.ijse.therapycenter;
+    exports edu.ijse.therapycenter.controller;
 }

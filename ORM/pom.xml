@@ -4,10 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.org</groupId>
-    <artifactId>ORM</artifactId>
+    <groupId>edu.ijse.therapycenter</groupId>
+    <artifactId>therapy-center</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>ORM</name>
+    <name>Mental-Health-Therapy-Center</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -38,8 +38,6 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
-
-<!--        project dependencies-->
 
         <dependency>
             <groupId>org.hibernate.orm</groupId>
@@ -97,10 +95,11 @@
                 <version>0.0.8</version>
                 <executions>
                     <execution>
-                        <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.org.orm/com.org.orm.HelloApplication</mainClass>
+                            <mainClass>
+                                edu.ijse.therapycenter.therapycenter/edu.ijse.therapycenter.Initializer
+                            </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>
